@@ -1,0 +1,25 @@
+@import './resets.scss';
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './ui';
+
+
+body {
+  background-color: $colorWhite;
+
+  font-size: 1.125rem;
+  font-family: $FirstFontRegular;
+  color: $colorBiscay;
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}

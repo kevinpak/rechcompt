@@ -41,7 +41,7 @@ class UserRepository implements UserRepositoryInterface
                 'last_name'     => $request->last_name,
                 'email'         => $request->email,
                 'phone'         => $request->phone,
-                'password'      => $request->password,
+                'password'      => bcrypt($request->password),
                 'country'       => $request->country,
             ]);
 
@@ -69,7 +69,7 @@ class UserRepository implements UserRepositoryInterface
                 'last_name'     => $request->last_name,
                 'email'         => $request->email,
                 'phone'         => $request->phone,
-                'password'      => $request->password,
+                'password'      => bcrypt($request->password),
                 'country'       => $request->country,
             ]);
 

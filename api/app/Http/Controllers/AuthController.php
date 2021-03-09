@@ -2,25 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\Services\ResponseAPI;
-use App\Services\CreateToken;
+use App\Interfaces\AuthRepositoryInterface;
+use App\Http\Requests\AuthRequest;
 
 class AuthController extends Controller
 {
-    use ResponseAPI;
-    use CreateToken;
+    protected $authRepositoryInterface;
 
-    public function login(Request $request){
+    /**
+     * Create a new constructor for this controller
+     */
+    public function __construct(AuthRepositoryInterface $authRepositoryInterface)
+    {
+        $this->authRepositoryInterface = $authRepositoryInterface;
+    }
 
-        $credentials = request(['email', 'password']);
-        if(Auth::attempt($credentials)) {
-            $token = $this->getToken($request->user());
-            return $this->success(['token' => $token]);
-        } else {
-            return $this->failed(401, ['error' => 'Access denied.']);
-        }
+    public function login(AuthRequest $request)
+    {
+        return $this->authRepositoryInterface->login($request);
+    }
 
+    /**
+     * Logout user (Revoke the token)
+     *
+     * @return [string] message
+     */
+    public function logout(AuthRequest $request)
+    {
+        return $this->authRepositoryInterface->logout($request);
     }
 }

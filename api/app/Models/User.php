@@ -80,4 +80,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Transaction::class);
     }
+
+    public function loginHistory()
+    {
+        return $this->hasMany(LoginHistory::class);
+    }
 }

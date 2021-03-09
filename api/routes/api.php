@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\LoginHistoryController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
@@ -22,13 +23,14 @@ Route::prefix('v1')->group(function () {
 
         Route::middleware(['guest'])->group(function () {
 
-            Route::post('login', [AuthController::class, 'login'])->name('login');
+            Route::post('login', [AuthController::class, 'login']);
             Route::apiResource('users', UserController::class)->only('store');
 
         });
 
         Route::middleware(['auth:api'])->group(function () {
 
+            Route::post('logout', [AuthController::class, 'logout']);
             Route::apiResource('users', UserController::class)->except('store');
 
         });
@@ -42,6 +44,8 @@ Route::prefix('v1')->group(function () {
         });
 
         Route::middleware(['auth:api'])->group(function () {
+
+            Route::apiResource('login-history', LoginHistoryController::class)->only(['index', 'show']);
 
         });
 

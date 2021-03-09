@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('v1')->group(function () {
+
+    Route::prefix('customer')->group(function () {
+
+        Route::middleware(['guest'])->group(function () {
+
+            Route::post('login', [AuthController::class, 'login'])->name('login');
+            Route::apiResource('users', UserController::class)->only('store');
+
+        });
+
+        Route::middleware(['auth:api'])->group(function () {
+
+            Route::apiResource('users', UserController::class)->except('store');
+
+        });
+
+    });
+
+    Route::prefix('admin')->group(function () {
+
+        Route::middleware(['guest'])->group(function () {
+
+        });
+
+        Route::middleware(['auth:api'])->group(function () {
+
+        });
+
+    });
+
 });

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b57f286208bb9b5bd7d6efe8d3a980cf",
+    "content-hash": "e770bb34a4457c3268c3fbd828e4b4ad",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1138,6 +1138,47 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.7.0"
             },
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "kkiapay/kkiapay-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kkiapay/php-sdk.git",
+                "reference": "be9b32948f3d3b43e6883e2ee902bddd71e56559"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kkiapay/php-sdk/zipball/be9b32948f3d3b43e6883e2ee902bddd71e56559",
+                "reference": "be9b32948f3d3b43e6883e2ee902bddd71e56559",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kkiapay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KKIAPAY",
+                    "email": "support.dev@kkiapay.me"
+                }
+            ],
+            "description": "Php sdk for kkiapay payment gateway",
+            "support": {
+                "issues": "https://github.com/kkiapay/php-sdk/issues",
+                "source": "https://github.com/kkiapay/php-sdk/tree/master"
+            },
+            "time": "2020-11-09T14:48:50+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8575,7 +8616,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kkiapay/kkiapay-php": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

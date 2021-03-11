@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\API\LoginHistoryController;
+use App\Http\Controllers\API\AggregatorCallbackController;
 use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\CallbackController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::prefix('v1')->group(function () {
+
+    Route::prefix('third-party')->group(function () {
+
+        Route::post('payment-callback', [AggregatorCallbackController::class, 'handlePostCallback']);
+        Route::get('payment-callback', [AggregatorCallbackController::class, 'handleGetCallback']);
+
+    });
 
     Route::prefix('customer')->group(function () {
 

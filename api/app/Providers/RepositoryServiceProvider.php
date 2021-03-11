@@ -3,10 +3,14 @@
 namespace App\Providers;
 
 use App\Interfaces\AuthRepositoryInterface;
+use App\Interfaces\AggregatorCallbackRepositoryInterface;
 use App\Interfaces\LoginHistoryRepositoryInterface;
+use App\Interfaces\TransactionRepositoryInterface;
 use App\Interfaces\UserRepositoryInterface;
 use App\Repositories\AuthRepository;
+use App\Repositories\AggregatorCallbackRepository;
 use App\Repositories\LoginHistoryRepository;
+use App\Repositories\TransactionRepository;
 use App\Repositories\UserRepository;
 use Illuminate\Support\ServiceProvider;
 
@@ -36,6 +40,16 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(
             LoginHistoryRepositoryInterface::class,
             LoginHistoryRepository::class
+        );
+
+        $this->app->bind(
+            TransactionRepositoryInterface::class,
+            TransactionRepository::class
+        );
+
+        $this->app->bind(
+            AggregatorCallbackRepositoryInterface::class,
+            AggregatorCallbackRepository::class
         );
 
     }

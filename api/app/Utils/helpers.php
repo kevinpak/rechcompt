@@ -164,3 +164,33 @@ if (!function_exists('getIp')) {
         return request()->ip(); // it will return server ip when no client ip found
     }
 }
+
+if (!function_exists('aggregator')) {
+    /**
+     * Retrieve aggregator informations from config file
+     */
+    function aggregator($argument){
+
+        $aggregator_name = config('payment.default');
+
+        $availableArguments = [
+            'public_key',
+            'private_key',
+            'secret',
+        ];
+
+        if(in_array($argument, $availableArguments)){
+            return config("payment.aggregators.$aggregator_name")[$argument];
+        } else {
+            return 'Not found!';
+        }
+
+    }
+}
+
+if (!function_exists('generate_random_code')) {
+    function generate_random_code(){
+        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_";
+        return substr( str_shuffle( $chars ), 0, 12 );
+    }
+}

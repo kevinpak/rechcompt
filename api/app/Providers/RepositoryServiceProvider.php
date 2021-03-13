@@ -4,14 +4,18 @@ namespace App\Providers;
 
 use App\Interfaces\AuthRepositoryInterface;
 use App\Interfaces\AggregatorCallbackRepositoryInterface;
+use App\Interfaces\BookmakerRepositoryInterface;
 use App\Interfaces\LoginHistoryRepositoryInterface;
 use App\Interfaces\TransactionRepositoryInterface;
 use App\Interfaces\UserRepositoryInterface;
+use App\Interfaces\WithdrawalRepositoryInterface;
 use App\Repositories\AuthRepository;
 use App\Repositories\AggregatorCallbackRepository;
+use App\Repositories\BookmakerRepository;
 use App\Repositories\LoginHistoryRepository;
 use App\Repositories\TransactionRepository;
 use App\Repositories\UserRepository;
+use App\Repositories\WithdrawalRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -50,6 +54,16 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(
             AggregatorCallbackRepositoryInterface::class,
             AggregatorCallbackRepository::class
+        );
+
+        $this->app->bind(
+            BookmakerRepositoryInterface::class,
+            BookmakerRepository::class
+        );
+
+        $this->app->bind(
+            WithdrawalRepositoryInterface::class,
+            WithdrawalRepository::class
         );
 
     }

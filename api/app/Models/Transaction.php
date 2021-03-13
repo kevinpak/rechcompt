@@ -11,9 +11,19 @@ class Transaction extends Model
 
     protected $fillable = [
         'user_id',
-        'code_id',
+        'transaction_id',
         'type',
         'amount',
         'status',
     ];
+
+    protected $hidden = [
+        'id',
+        'user_id',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

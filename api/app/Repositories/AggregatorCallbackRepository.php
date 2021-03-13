@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Interfaces\AggregatorCallbackRepositoryInterface;
 use App\Models\Transaction;
 use App\Models\User;
-use App\Models\Code;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -43,15 +42,10 @@ class AggregatorCallbackRepository implements AggregatorCallbackRepositoryInterf
                     return $this->error404('User');
                 }
 
-                $code = Code::create([
-                    'user_id' => $transactionDetails->state->userId,
-                    'content' => generate_random_code(),
-                ]);
-
                 Transaction::create([
                     'user_id' => $transactionDetails->state->userId,
-                    'code_id' => $code->id,
-                    'type'    => 'purchase',
+                    'transaction_id' => generate_random_code(),
+                    'type'    => 1,
                     'amount'  => $transactionDetails->amount,
                 ]);
             }
@@ -62,10 +56,6 @@ class AggregatorCallbackRepository implements AggregatorCallbackRepositoryInterf
             DB::rollBack();
             return $this->error(check_http_response_code($e->getCode()), show_trace_in_error($e->getTrace()), $e->getMessage());
         }
-
-
-
-
 
     }
 

@@ -50,7 +50,7 @@ trait ResponseAPI
      * @param   array|object    $data
      */
     public function success($data = null)
-    {
+    {//TODO: Add 201 created status
         return $this->coreResponse('success', 200, $data);
     }
 
@@ -60,9 +60,9 @@ trait ResponseAPI
      * @param   array|object    $data
      * @param   integer         $code
      */
-    public function failed($code = 403, $data)
+    public function failed($code = 403, $data, $message = 'Request failed')
     {
-        return $this->coreResponse('failed', $code, $data);
+        return $this->coreResponse('failed', $code, $data, $message);
     }
 
     /**

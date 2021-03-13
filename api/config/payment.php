@@ -15,4 +15,6 @@ return [
 
     'redirect_url' => env('PAYMENT_REDIRECT_URL'),
 
+    'withdrawal_url' => env('PAYMENT_WITHDRAWAL_URL'),
+
 ];

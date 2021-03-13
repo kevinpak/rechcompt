@@ -191,6 +191,7 @@ if (!function_exists('aggregator')) {
 if (!function_exists('generate_random_code')) {
     function generate_random_code(){
         $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_";
+        $chars = str_shuffle( $chars );
         return substr( str_shuffle( $chars ), 0, 12 );
     }
 }

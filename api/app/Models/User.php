@@ -66,11 +66,6 @@ class User extends Authenticatable
         $this->attributes['country'] = strtoupper($value);
     }
 
-    public function codes()
-    {
-        return $this->hasMany(Code::class);
-    }
-
     public function orders()
     {
         return $this->hasMany(Order::class);

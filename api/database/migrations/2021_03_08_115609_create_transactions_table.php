@@ -16,11 +16,11 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('code_id');
+            $table->text('transacion_id');
             // type => 1 = purchase; 2 = withdrawal
-            $table->integer('type')->default(1);
+            $table->tinyInteger('type')->default(1);
             $table->integer('amount');
-            //status => 0 = blocked; 1 = disabled; 2 = enabled
+            //status => 2 = valid; 3 = invalid
             $table->tinyInteger('status')->default(2);
             $table->timestamps();
         });

@@ -195,3 +195,21 @@ if (!function_exists('generate_random_code')) {
         return substr( str_shuffle( $chars ), 0, 12 );
     }
 }
+
+if (!function_exists('fill_parameters')) {
+    function fill_parameters($url, ...$params){
+        if(is_null($url) || empty($url)){
+            return;
+        }
+        if(count($params) <= 0){
+            return;
+        }
+
+        $rank = 1;
+        foreach ($params as $param) {
+            $url = str_replace('param'.$rank, $param, $url);
+        }
+
+        return $url;
+    }
+}

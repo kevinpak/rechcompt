@@ -46,6 +46,9 @@ class UserRepository implements UserRepositoryInterface
             ]);
 
             DB::commit();
+
+            $user->sendEmailVerificationNotification();
+
             return $this->success($this->getToken($user));
         } catch (\Exception $e) {
             DB::rollBack();

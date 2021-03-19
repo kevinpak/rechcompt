@@ -72,7 +72,7 @@ trait ResponseAPI
      * @param   array|object    $data
      * @param   integer         $code
      */
-    public function error($code, $data = null, $message = "Une erreur s'est produite.")
+    public function error($code, $data = null, $message = "An error has occured.")
     {
         return $this->coreResponse('error', $code, $data, $message);
     }

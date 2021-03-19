@@ -98,6 +98,13 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
+            'reset_url' => env('FRONTEND_PASSWORD_RESET_URL', 'http://rechcompt.com/reset-password'),
+        ],
+    ],
+
+    'email' => [
+        'users' => [
+            'verify_url' => env('FRONTEND_EMAIL_VERIFY_URL', 'http://rechcompt.com/verify-url'),
         ],
     ],
 

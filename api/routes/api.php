@@ -4,9 +4,11 @@ use App\Http\Controllers\API\LoginHistoryController;
 use App\Http\Controllers\API\AggregatorCallbackController;
 use App\Http\Controllers\API\BookmakerController;
 use App\Http\Controllers\API\UserController;
-use App\Http\Controllers\API\CallbackController;
+use App\Http\Controllers\API\ForgotPasswordController;
+use App\Http\Controllers\API\ResetPasswordController;
 use App\Http\Controllers\API\WithdrawalController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\API\EmailVerificationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -45,9 +47,14 @@ Route::prefix('v1')->group(function () {
             Route::post('login', [AuthController::class, 'login']);
             Route::apiResource('users', UserController::class)->only('store');
 
+            Route::post('forgot-password', ForgotPasswordController::class);
+            Route::post('reset-password', ResetPasswordController::class);
+
+            Route::get('email/verify/{id}', [EmailVerificationController::class, 'verify'])->name('verification.verify');
+
         });
 
-        Route::middleware(['auth:api'])->group(function () {
+        Route::middleware(['auth:api, isEmailVerified'])->group(function () {
 
             Route::post('logout', [AuthController::class, 'logout']);
             Route::apiResource('users', UserController::class)->except('store');
@@ -56,6 +63,9 @@ Route::prefix('v1')->group(function () {
 
             Route::get('withdrawals/{withdrawal_id}/status', [WithdrawalController::class, 'checkWithdrawalStatusOfBookmaker']);
             Route::post('withdrawals', [WithdrawalController::class, 'createWithdrawal']);
+
+            Route::get('email/resend', [EmailVerificationController::class, 'resend'])->name('verification.send')
+            ->withoutMiddleware('isEmailVerified');
 
         });
 

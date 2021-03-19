@@ -209,13 +209,13 @@
 
             <!-- Email -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="accordion-1__heading-2">
+                <h2 class="accordion-header" id="accordion-1__heading-5">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#accordion-1__collapse-2" aria-expanded="false" aria-controls="accordion-1__collapse-2">
+                        data-bs-target="#accordion-1__collapse-5" aria-expanded="false" aria-controls="accordion-1__collapse-5">
                         Email
                     </button>
                 </h2>
-                <div id="accordion-1__collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-1__heading-2"
+                <div id="accordion-1__collapse-5" class="accordion-collapse collapse" aria-labelledby="accordion-1__heading-5"
                     data-bs-parent="#accordion-1">
                     <div class="accordion-body">
 
@@ -237,13 +237,13 @@
 
             <!-- Password -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="accordion-1__heading-2">
+                <h2 class="accordion-header" id="accordion-1__heading-6">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#accordion-1__collapse-2" aria-expanded="false" aria-controls="accordion-1__collapse-2">
+                        data-bs-target="#accordion-1__collapse-6" aria-expanded="false" aria-controls="accordion-1__collapse-6">
                         Password
                     </button>
                 </h2>
-                <div id="accordion-1__collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-1__heading-2"
+                <div id="accordion-1__collapse-6" class="accordion-collapse collapse" aria-labelledby="accordion-1__heading-6"
                     data-bs-parent="#accordion-1">
                     <div class="accordion-body">
 
@@ -261,7 +261,7 @@
                         --header 'Accept: application/json' \
                         --header 'Content-Type: multipart/form-data; boundary=---011000010111000001101001' \
                         --form email=boko@gmail.com \
-                        --form token={UrlToken} \
+                        --form token={TokenInUrl} \
                         --form password=pass_rech \
                         --form password_confirmation=pass_rech
                         " />

@@ -206,6 +206,69 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Email -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accordion-1__heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion-1__collapse-2" aria-expanded="false" aria-controls="accordion-1__collapse-2">
+                        Email
+                    </button>
+                </h2>
+                <div id="accordion-1__collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-1__heading-2"
+                    data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+
+                        <x-api-doc-operation request-method="get" operation-name="Verify" http-code="
+                        curl --request GET \
+                        --url http://rechcompt.dev-spw.com/api/api/v1/customer/email/verify/{id}
+                        " />
+
+                        <x-api-doc-operation request-method="get" operation-name="Resend" http-code="
+                        curl --request GET \
+                        --url http://rechcompt.dev-spw.com/api/api/v1/customer/email/resend \
+                        --header 'Accept: application/json' \
+                        --header 'Authorization: Bearer {bearerToken}'
+                        " />
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accordion-1__heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion-1__collapse-2" aria-expanded="false" aria-controls="accordion-1__collapse-2">
+                        Password
+                    </button>
+                </h2>
+                <div id="accordion-1__collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-1__heading-2"
+                    data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+
+                        <x-api-doc-operation request-method="get" operation-name="Forgot" http-code="
+                        curl --request POST \
+                        --url http://rechcompt.dev-spw.com/api/api/v1/customer/forgot-password \
+                        --header 'Accept: application/json' \
+                        --header 'Content-Type: multipart/form-data; boundary=---011000010111000001101001' \
+                        --form email=boko@gmail.com
+                        " />
+
+                        <x-api-doc-operation request-method="get" operation-name="Reset" http-code="
+                        curl --request POST \
+                        --url http://rechcompt.dev-spw.com/api/api/v1/customer/reset-password \
+                        --header 'Accept: application/json' \
+                        --header 'Content-Type: multipart/form-data; boundary=---011000010111000001101001' \
+                        --form email=boko@gmail.com \
+                        --form token={UrlToken} \
+                        --form password=pass_rech \
+                        --form password_confirmation=pass_rech
+                        " />
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Admin -->

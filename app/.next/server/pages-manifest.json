@@ -1,6 +1,12 @@
 {
+  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
+  "/clients/codes": "pages/clients/codes.html",
+  "/clients": "pages/clients.html",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/register": "pages/register.html",
+  "/restore-password": "pages/restore-password.html",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_document": "pages/_document.js"
 }

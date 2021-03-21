@@ -1,4 +1,54 @@
 /*---------------------------------*\
+*            MONTSERRAT             *
+*----------------------------------*/
+@font-face {
+  font-family: Montserrat-Extra-Light;
+  src: local("Montserrat-Extra-Light"), url("/fonts/montserrat/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Extra-Light-Italic;
+  src: local("Montserrat-Extra-Light-Italic"), url("/fonts/montserrat/Montserrat-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: local("Montserrat-Light"), url("/fonts/montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Italic;
+  src: local("Montserrat-Italic"), url("/fonts/montserrat/Montserrat-Italic.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: local("Montserrat-Regular"), url("/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: local("Montserrat-Medium"), url("/fonts/montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: local("Montserrat-Bold"), url("/fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: local("Montserrat-ExtraBold"), url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Black;
+  src: local("Montserrat-Black"), url("/fonts/montserrat/Montserrat-Black.ttf");
+}
+
+
+
+/*---------------------------------*\
 *              GOLOS               *
 *----------------------------------*/
 @font-face {

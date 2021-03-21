@@ -1,0 +1,95 @@
+@import './../commons';
+
+.pageError {
+  min-height: 100vh;
+  background-color: $colorSystemGondola;
+
+  header {
+    ul {
+      display: none;
+    }
+  }
+
+  .inner {
+    color: $colorWhite;
+    padding-top: 120px;
+  }
+
+  .title {
+    font-size: 10rem !important;
+    line-height: 10rem !important;
+    font-family: $FirstFontExtraBold;
+    color: $colorWhite !important;
+    margin-bottom: 5px !important;
+  }
+
+  .subTitle {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    font-family: $FirstFontBold;
+    color: $colorWhite;
+    margin-bottom: 5px;
+  }
+
+  .text {
+    margin-bottom: 80px;
+  }
+
+  .fontElem {
+    display: inline-block;
+    min-width: 53px;
+    min-height: 51px;
+    position: absolute;
+    background-image: url('/images/svg/i/icon-font-404.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    z-index: 2;
+
+    &_1{
+      width: 28px;
+      height: 28px;
+      top: 175px;
+      left: 420px;
+      
+    }
+
+    &_2{
+      width: 76px;
+      height: 72px;
+      bottom: -100px;
+      left: 100px;
+    }
+
+    &_3{
+      width: 222px;
+      height: 222px;
+      position: fixed;
+      bottom: -100px;
+      left: 33%;
+    }
+
+    &_4{
+      width: 800px;
+      height: 660px;
+      background-image: url('/images/svg/i/icon-font2-404.svg');
+      //background-size: calc(100% - 380px);
+      background-position: top right;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    &_5{
+      width: 168px;
+      height: 160px;
+      position: fixed;
+      top: calc(50% - 2px);
+      right: -60px;
+    }
+  }
+
+
+  
+}

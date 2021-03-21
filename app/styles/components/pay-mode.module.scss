@@ -1,0 +1,60 @@
+@import './../commons';
+
+.payMode {
+  background: #FFFFFF;
+  border-radius: 35px;
+  padding: 55px 30px 45px;
+  text-align: center;
+
+  .title {
+    font-size: 2.188rem !important;
+    margin-bottom: 35px !important;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    &Item {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: 0 8px 20px;
+      line-height: 100px;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      overflow: hidden;
+      border-radius: 50%;
+      
+      &>img {
+        max-width: 80% !important;
+      }
+
+      &.mtn {
+        background-color: $colorSLightningYellow;
+      }
+
+      &.moov {
+        background-color: $colorBlack;
+      }
+
+      &.mastercard {
+        background-color: $colorAstronautBlue;
+      }
+    }
+  }
+
+  .text {
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+
+  .btn {
+    width: 300px;
+    height: 55px;
+    box-shadow: 0px 2px 3px 1px $colorSystemForShadowSecond;
+  }
+}

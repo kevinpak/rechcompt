@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './../components/header'
 import Footer from './../components/footer'
+import GoUpThePage from './../components/anchors/go-up-the-page'
 
 const LandingPage = (props) => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = (props) => {
         </main>
         <Footer />
       </div>
+      <GoUpThePage />
     </>
   )
 }

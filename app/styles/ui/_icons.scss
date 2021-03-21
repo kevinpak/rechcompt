@@ -2,12 +2,110 @@
 ==> icon-close
 */
 .icon-close {
-  @include icons-formats(14px, 14px, 'i/icon-close.svg', $defaultColor, $eventColor);
+  @include icons-formats(14px, 14px, 'i/icon-close.svg', $colorSystemGray, $colorSystemCrusta);
 }
 
 /*
 ==> icon-cookie
 */
 .icon-cookie {
-  @include icons-formats(30px, 30px, 'i/icon-cookie.svg', $defaultColor, $eventColor);
+  @include icons-formats(30px, 30px, 'i/icon-cookie.svg', $colorSystemGray, $colorSystemCrusta);
 }
+
+
+/*
+==> icon-twitter
+*/
+.icon-twitter {
+  @include icons-formats(20px, 20px, 'i/icon-twitter.svg', $colorSystemSilverChalice, $colorSystemCrusta);
+}
+
+/*
+==> icon-faceboock
+*/
+.icon-faceboock {
+  @include icons-formats(20px, 20px, 'i/icon-faceboock.svg', $colorSystemSilverChalice, $colorSystemCrusta);
+}
+
+/*
+==> icon-instagram
+*/
+.icon-instagram {
+  @include icons-formats(20px, 20px, 'i/icon-instagram.svg', $colorSystemSilverChalice, $colorSystemCrusta);
+}
+
+/*
+==> icon-arrow-up
+*/
+.icon-arrow-up {
+  @include icons-formats(24px, 24px, 'i/icon-arrow-up.svg', $colorSystemSilverChalice, $colorSystemCrusta);
+}
+
+/*
+==> icon-hamburger-menu
+*/
+.icon-hamburger-menu {
+  @include icons-formats(30px, 30px, 'i/icon-hamburger-menu.svg', $color_B002, $color_C003);
+}
+
+
+/*
+==> icon-home
+*/
+.icon-home {
+  @include icons-formats(18px, 18px, 'i/icon-home.svg', $color_A007, $color_C003);
+}
+
+/*
+==> icon-arrow-left-02
+*/
+.icon-arrow-left-02 {
+  @include icons-formats(18px, 18px, 'i/icon-arrow-left-02.svg', $color_A007, $color_C003);
+}
+
+/*
+==> icon-arrow-right-02
+*/
+.icon-arrow-right-02 {
+  @include icons-formats(18px, 18px, 'i/icon-arrow-right-02.svg', $color_A007, $color_C003);
+}
+
+/*
+==> icon-credit-carte
+*/
+.icon-credit-carte {
+  @include icons-formats(18px, 18px, 'i/icon-credit-carte.svg', $color_A007, $color_C003);
+}
+
+
+/*
+==> icon-barcode
+*/
+.icon-barcode {
+  @include icons-formats(18px, 18px, 'i/icon-barcode.svg', $color_A007, $color_C003);
+}
+
+/*
+==> icon-cart
+*/
+.icon-cart {
+  @include icons-formats(22px, 22px, 'i/icon-cart.svg', $color_C003, $color_C003);
+}
+
+/*
+==> icon-wallet
+*/
+.icon-wallet {
+  @include icons-formats(22px, 22px, 'i/icon-wallet.svg', $color_C003, $color_C003);
+}
+
+
+/*
+==> icon-font-404
+
+.icon-font-404 {
+  @include icons-formats(24px, 24px, 'i/icon-font-404.svg', $coloSystemBamboo, $coloSystemBamboo);
+}*/
+
+
+

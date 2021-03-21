@@ -1,0 +1,83 @@
+@import './../../commons';
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color_B005;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+      min-height: 100px;
+      padding: 22px 15px 15px;
+      text-align: center;
+    }
+
+    .nav {
+      .list {
+        .item {
+          
+
+          &Link {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 50px;
+            padding: 6px 10px 6px 70px;
+            font-family: $FirstFontMedium;
+            font-size: 0.9rem;
+            color: $color_A006;
+            transition: all .3s linear;
+
+            &::before {
+              left: 45px;
+              top: calc(50% - 9px);
+            }
+
+            &:hover {
+              background-color: $color_B005-1;
+            }
+            
+            &.active {
+              background-color: $color_F004;
+              color: $color_A002-1;
+
+              &::before {
+                background-color: $color_C003;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      margin-top: auto;
+      text-align: center;
+
+      .webMaster {
+        padding: 15px 15px 15px;
+        background-color: $color_B006;
+        color: $color_A005;
+        font-size: 0.8rem;
+
+        .link {
+          font-family: $FirstFontBold;
+          color: $color_A006;
+          transition: all .3s linear;
+
+          &:hover {
+            color: $color_C003;
+          }
+        }
+      }
+    }
+  }
+}

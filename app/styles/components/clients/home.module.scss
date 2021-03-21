@@ -1,0 +1,13 @@
+@import './../../commons';
+
+.home {
+  .inner {
+    padding: 10px 10px;
+
+    .title {
+      font-size: 1.3rem !important;
+      color: $color_A007 !important;
+      text-align: center;
+    }
+  }
+}

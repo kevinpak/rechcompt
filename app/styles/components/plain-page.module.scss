@@ -1,10 +1,9 @@
 @import './../commons';
 
-.painPage {
+.plainPage {
   min-height: 100vh;
   background-color: $colorSystemGondola;
-  padding-top: 80px;
-  padding-bottom: 25px;
+  padding: 80px 10px 25px;
   overflow: hidden;
   box-sizing: border-box;
 
@@ -29,7 +28,7 @@
 
   .title {
     font-size: 2.5rem !important;
-    line-height: 2.5rem !important;
+    line-height: 1.5rem !important;
     text-align: center;
   }
 

@@ -45,3 +45,14 @@ textarea {
   display: block;
   width: 100%;
 }
+
+button {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  transition: all .3s linear;
+}
+
+button:hover>i[class*="icon-"] {
+  background-color: #f1902c;
+}

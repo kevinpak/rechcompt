@@ -12,6 +12,7 @@
     margin-bottom: 5px;
 
     .webmaster {
+      font-size: 0.8rem;
       color: $colorSystemBlueHaze;
 
       &Link{
@@ -99,8 +100,24 @@
     color: $colorSystemGray;
     border-top: solid 1px $colorSystemWoodyBrown;
     padding-top: 5px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
-  
+  @media(max-width: 540px) {
+    .top {
+      flex-direction: column;
+
+      .webmaster {
+        order: 3;
+      }
+
+      .rsList {
+        order: 2;
+      }
+
+      .user {
+        order: 1;
+      }
+    }
+  }
 }

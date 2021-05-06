@@ -60,4 +60,15 @@
       }
     }
   }
+
+
+  @media(max-width: 960px) {
+    .list {
+      flex-direction: column;
+
+      &Item {
+        width: 100%;
+      }
+    }
+  }
 }

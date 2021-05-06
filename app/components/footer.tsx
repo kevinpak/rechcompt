@@ -11,7 +11,7 @@ const Footer = () => {
         <Row>
           <Col sm={12}>
             <div className={styles.top}>
-              <div className={styles.webmaster}>Réaliser par <a href="#" className={styles.webmasterLink}><span>KevinpakCode</span></a></div>
+              <div className={styles.webmaster}>Réalisé par <a href="#" className={styles.webmasterLink}><span>KevinpakCode</span></a></div>
               <ul className={styles.rsList}>
                 <li className={styles.rsListItem}>
                   <a href="#" className={styles.rsListItemLink+' '+styles.twitter+' icon-twitter icon-inner'}></a>
@@ -38,7 +38,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className={styles.bottom}>
-              <div className={styles.copyrights}>Copyrights © 2021 RechCompt.</div>
+              <div className={styles.copyrights}>Copyrights © RechCompt - 2021.</div>
             </div>
           </Col>
         </Row>

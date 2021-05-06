@@ -6,7 +6,7 @@ const PlainPage = (props) => {
   console.log(titleFormat)
   return (
     <>
-      <div className={styles.painPage}>
+      <div className={styles.plainPage}>
         <div className={styles.inner}>
           <div className={styles.logo}><Logo /> </div>
           <div className={styles.body +'  '+props.className??''}>

@@ -11,6 +11,7 @@ import Router from 'next/router'
 
 const Header = () => {
   const [fixedHeader, setFixedHeader] = useState(false)
+  const [mobilMenu, setMobilMenu] = useState(false)
 
   /*
   *
@@ -26,6 +27,12 @@ const Header = () => {
     Router.push('/login')
   }
 
+  /*
+  *
+  */
+  const OpenCloseMobilMenu = () => {
+    setMobilMenu(!mobilMenu)
+  }
 
 
  /* useEffect(() => {
@@ -61,29 +68,30 @@ const Header = () => {
                   </a>
                 </Link>
               </div>
-              <ul className={styles.menu}>
-                <li className={styles.menuItem}>
-                  <Link href="#home-banner" >
-                    <a className={styles.menuItemLink + ' '+styles.active }>Accueil</a>
-                  </Link>
-                </li>
-                <li className={styles.menuItem}>
-                  <Link href="#services" >
-                    <a className={styles.menuItemLink}>Nos services</a>
-                  </Link>
-                </li>
-                <li className={styles.menuItem}>
-                  <Link href="#how-it-work" >
-                    <a className={styles.menuItemLink}>Comment ça marche</a>
-                  </Link>
-                </li>
-                <li className={styles.menuItem}>
-                  <Link href="#forme-contact" >
-                    <a className={styles.menuItemLink}>Comment ça marche</a>
-                  </Link>
-                </li>
-              </ul>
-              <ul className={styles.btns}>
+              <div className={`${styles.headerRight}  ${mobilMenu?styles.MobilMenuOpen:''}`}>
+                <ul className={styles.menu}>
+                  <li className={styles.menuItem}>
+                    <Link href="#home-banner" >
+                      <a className={styles.menuItemLink + ' '+styles.active }>Accueil</a>
+                    </Link>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <Link href="#services" >
+                      <a className={styles.menuItemLink}>Nos services</a>
+                    </Link>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <Link href="#how-it-work" >
+                      <a className={styles.menuItemLink}>Comment ça marche?</a>
+                    </Link>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <Link href="#forme-contact" >
+                      <a className={styles.menuItemLink}>Contacts</a>
+                    </Link>
+                  </li>
+                </ul>
+                <ul className={styles.btns}>
                 <li className={styles.btnsItem}>
                   <button className={`${styles.btnsItemBtn} cpn-btn cpn-btn__white`} onClick={goToLogin}><span>Connexion</span></button>
                 </li>
@@ -91,6 +99,9 @@ const Header = () => {
                   <button className={`${styles.btnsItemBtn} cpn-btn cpn-btn__orange`} onClick={goToRegister}><span>Inscription</span></button>
                 </li>
               </ul>
+              <button className={`${styles.mobilBtnClose}`} onClick={OpenCloseMobilMenu}><i className="icon-close icon-inner"></i></button>
+              </div>
+              <button className={`${styles.mobilBtn}`} onClick={OpenCloseMobilMenu}><i className="icon-hamburger-menu icon-inner"></i></button>
             </div>
           </Col>
         </Row>

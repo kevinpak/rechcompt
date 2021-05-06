@@ -60,4 +60,42 @@
       }
     }
   }
+
+  @media(max-width: 767px) {
+    .left {
+      max-width: 100%;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .right {
+      width: 100% !important;
+    }
+
+    .title {
+      font-size: 2.5rem !important;
+      line-height: 3rem !important;
+
+      &::after {
+        width: 300px;
+        left: calc(50% - 150px);
+      }
+    }
+
+    .subTitle {
+      text-align: center;
+    }
+
+    .turnstile {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media(max-width: 350px) {
+    .title {
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
 }

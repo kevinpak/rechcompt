@@ -8,7 +8,7 @@
 # testing
 /coverage
 
-# next.js
+# next.jspm2 start --name=website npm -- start
 /.next/cache/
 /.next/static/
 /out/

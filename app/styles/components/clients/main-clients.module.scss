@@ -1,0 +1,8 @@
+@import './../../commons';
+
+.mainClients {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  margin-left: 250px;
+  background-color: $color_A002;
+}

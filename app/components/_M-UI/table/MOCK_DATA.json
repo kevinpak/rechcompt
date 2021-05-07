@@ -1,0 +1,501 @@
+[{
+  "date": "2.9.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "PSB^V",
+  "status": true
+}, {
+  "date": "26.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "IRDMB",
+  "status": false
+}, {
+  "date": "3.7.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "VUZI",
+  "status": true
+}, {
+  "date": "27.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "PBR.A",
+  "status": false
+}, {
+  "date": "18.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "RFAP",
+  "status": true
+}, {
+  "date": "4.4.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "QQQC",
+  "status": true
+}, {
+  "date": "11.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "RAS",
+  "status": false
+}, {
+  "date": "9.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "HCN^I",
+  "status": false
+}, {
+  "date": "30.1.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "BOJA",
+  "status": true
+}, {
+  "date": "31.7.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CIM^A",
+  "status": false
+}, {
+  "date": "7.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "GOGO",
+  "status": true
+}, {
+  "date": "28.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CHGG",
+  "status": false
+}, {
+  "date": "25.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "UFPI",
+  "status": true
+}, {
+  "date": "20.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "DTYL",
+  "status": true
+}, {
+  "date": "11.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "DSLV",
+  "status": true
+}, {
+  "date": "20.2.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SLCT",
+  "status": false
+}, {
+  "date": "24.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "NVRO",
+  "status": false
+}, {
+  "date": "9.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "VGSH",
+  "status": true
+}, {
+  "date": "19.4.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "KYO",
+  "status": true
+}, {
+  "date": "2.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CEL",
+  "status": true
+}, {
+  "date": "14.9.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "JCTCF",
+  "status": true
+}, {
+  "date": "30.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "FRC^E",
+  "status": true
+}, {
+  "date": "20.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "MATX",
+  "status": true
+}, {
+  "date": "13.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "PSX",
+  "status": true
+}, {
+  "date": "19.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "HP",
+  "status": false
+}, {
+  "date": "18.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "BEP",
+  "status": false
+}, {
+  "date": "27.1.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "LMB",
+  "status": false
+}, {
+  "date": "30.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "EFAS",
+  "status": false
+}, {
+  "date": "24.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "PRE^F",
+  "status": true
+}, {
+  "date": "8.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "TCO",
+  "status": false
+}, {
+  "date": "22.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "GPRO",
+  "status": true
+}, {
+  "date": "20.10.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OXBRW",
+  "status": true
+}, {
+  "date": "14.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "DTRM",
+  "status": false
+}, {
+  "date": "16.1.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "PPH",
+  "status": true
+}, {
+  "date": "28.3.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "MOCO",
+  "status": true
+}, {
+  "date": "31.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "TIL",
+  "status": false
+}, {
+  "date": "7.1.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "FSCE",
+  "status": false
+}, {
+  "date": "13.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "DTJ",
+  "status": true
+}, {
+  "date": "20.1.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SYNA",
+  "status": true
+}, {
+  "date": "14.3.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "LENS",
+  "status": false
+}, {
+  "date": "25.10.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SPIL",
+  "status": false
+}, {
+  "date": "15.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "GSUM",
+  "status": true
+}, {
+  "date": "28.4.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "AMWD",
+  "status": false
+}, {
+  "date": "26.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "TESS",
+  "status": true
+}, {
+  "date": "11.10.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "COF^H",
+  "status": false
+}, {
+  "date": "17.3.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "AAN",
+  "status": true
+}, {
+  "date": "29.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CTRE",
+  "status": true
+}, {
+  "date": "23.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CHFC",
+  "status": true
+}, {
+  "date": "3.2.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SUNW",
+  "status": true
+}, {
+  "date": "15.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "ERJ",
+  "status": false
+}, {
+  "date": "10.2.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OSUR",
+  "status": true
+}, {
+  "date": "14.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "ANAT",
+  "status": false
+}, {
+  "date": "7.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "BMO",
+  "status": false
+}, {
+  "date": "27.3.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CYHHZ",
+  "status": false
+}, {
+  "date": "15.8.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OFG^D",
+  "status": true
+}, {
+  "date": "30.4.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "GIII",
+  "status": true
+}, {
+  "date": "28.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SCQ",
+  "status": false
+}, {
+  "date": "16.4.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "AYX",
+  "status": false
+}, {
+  "date": "5.4.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SLG",
+  "status": true
+}, {
+  "date": "24.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "WSTC",
+  "status": false
+}, {
+  "date": "6.1.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "INFR",
+  "status": false
+}, {
+  "date": "14.1.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "UNFI",
+  "status": false
+}, {
+  "date": "13.1.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "MTSI",
+  "status": false
+}, {
+  "date": "26.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CS",
+  "status": false
+}, {
+  "date": "28.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OGXI",
+  "status": true
+}, {
+  "date": "15.3.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "THW",
+  "status": true
+}, {
+  "date": "24.1.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "LTXB",
+  "status": false
+}, {
+  "date": "27.7.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "ASML",
+  "status": true
+}, {
+  "date": "29.1.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "FTAG",
+  "status": true
+}, {
+  "date": "29.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SENEB",
+  "status": false
+}, {
+  "date": "28.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OCFC",
+  "status": true
+}, {
+  "date": "11.2.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "IEUS",
+  "status": false
+}, {
+  "date": "5.6.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "WUBA",
+  "status": false
+}, {
+  "date": "9.7.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "LMAT",
+  "status": false
+}, {
+  "date": "13.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "STAR^D",
+  "status": false
+}, {
+  "date": "27.2.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "EXFO",
+  "status": true
+}, {
+  "date": "31.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "EXPR",
+  "status": false
+}, {
+  "date": "17.10.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "BQH",
+  "status": false
+}, {
+  "date": "19.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "LMBS",
+  "status": true
+}, {
+  "date": "31.10.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "DEST",
+  "status": false
+}, {
+  "date": "14.3.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "FNBG",
+  "status": true
+}, {
+  "date": "28.9.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "FMAO",
+  "status": true
+}, {
+  "date": "30.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "FORR",
+  "status": false
+}, {
+  "date": "30.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "TPRE",
+  "status": true
+}, {
+  "date": "23.9.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SCX",
+  "status": false
+}, {
+  "date": "23.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "MDCO",
+  "status": false
+}, {
+  "date": "26.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "TU",
+  "status": false
+}, {
+  "date": "12.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OPGNW",
+  "status": false
+}, {
+  "date": "9.5.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "SEV",
+  "status": false
+}, {
+  "date": "31.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "BNFT",
+  "status": true
+}, {
+  "date": "5.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "PTIE",
+  "status": false
+}, {
+  "date": "12.2.2021",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "ZYME",
+  "status": false
+}, {
+  "date": "21.11.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "OHGI",
+  "status": true
+}, {
+  "date": "19.9.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "ESLT",
+  "status": false
+}, {
+  "date": "26.1.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CTG",
+  "status": false
+}, {
+  "date": "22.1.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "TTC",
+  "status": true
+}, {
+  "date": "16.9.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "WHG",
+  "status": true
+}, {
+  "date": "13.12.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "ARES",
+  "status": true
+}, {
+  "date": "24.3.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "HOPE",
+  "status": true
+}, {
+  "date": "24.3.2020",
+  "codes": "d81f3d390bfff42e424bf4b01d8db31d225995aa",
+  "type": "CMFN",
+  "status": false
+}]

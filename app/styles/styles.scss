@@ -4,11 +4,14 @@
 @import './mixins';
 @import './ui';
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: $colorWhite;
 
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: $FirstFontRegular;
   color: $colorBiscay;
   line-height: 1.5rem;

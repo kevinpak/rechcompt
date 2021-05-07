@@ -1,0 +1,46 @@
+@import './../commons';
+
+.login {
+
+  .btn {
+    width: 300px;
+    max-width: 100%;
+    height: 55px;
+    box-shadow: 0px 2px 3px 1px $color_shadow_002;
+    margin-bottom: 30px;
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      color: $color_C002;
+      font-size: 0.9rem;
+      transition: .3s linear;
+
+      &>span {
+        //border-bottom: 1px solid $color_C002;
+      }
+
+      &:hover {
+        &>span {
+          border-bottom: none;
+        }
+      }
+
+      &.restorePassword {
+        color: $color_B003;
+
+        &:hover {
+          color: $color_C003;
+        }
+      }
+
+      &:hover {
+        color: $color_C003;
+      }
+    }
+  }
+}

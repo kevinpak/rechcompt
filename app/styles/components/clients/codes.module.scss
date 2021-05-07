@@ -1,0 +1,30 @@
+@import './../../commons';
+
+.inner {
+  padding: 10px 10px;
+
+  .listBtns {
+    display: flex;
+    align-items: center;
+    
+    .item {
+      margin: 0 5px;
+
+      &Btn {
+        min-width: 90px;
+        height: 45px;
+        padding: 10px 12px 10px 30px;
+        border-radius: 8px 8px 0 0;
+        background-color: $color_B005;
+        font-size: 0.75rem;
+        font-family: $FirstFontMedium;
+        color: $color_A001;
+        text-align: left;
+
+        &::before {
+          left: 8px;
+        }
+      }
+    }
+  }
+}

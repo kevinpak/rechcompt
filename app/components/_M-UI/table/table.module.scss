@@ -1,0 +1,31 @@
+@import './../../../styles/commons';
+
+.tableCpn {
+  width: 100%;
+
+  thead {
+    background-color: $color_F004;
+    tr {
+      th {
+        min-height: 20px;
+        color: $color_A002;
+        font-size: 0.9rem;
+        font-family: $FirstFontMedium;
+        padding: 10px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        min-height: 20px;
+        color: $color_B002;
+        font-size: 0.8rem;
+        font-family: $FirstFontRegular;
+        padding: 10px;
+        border:solid 1px $color_B002;
+      }
+    }
+  }
+}

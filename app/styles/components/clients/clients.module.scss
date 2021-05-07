@@ -1,0 +1,22 @@
+@import './../../commons';
+
+.clients {
+  min-height: 100vh;
+  background-color: $color_E004;
+
+  .title {
+    font-size: 1.9rem !important;
+    line-height: 1.9rem !important;
+    padding: 10px 10px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      width: calc(100% - 20px);
+      height: 1px;
+      background-color: $color_A008;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@mixin FistTitle($size:2.75rem, $color:$colorBlack){
+@mixin FistTitle($size:3.75rem, $color:$colorBlack){
   font-size: $size !important;
   color: $color !important;
   line-height: $size !important;

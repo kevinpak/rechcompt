@@ -1,0 +1,74 @@
+@import './../commons';
+
+.howItWork {
+  padding: 80px 0 80px;
+  //background-color: $colorSystemSilver;
+  background-color:  $colorSystemShark;
+
+  .title {
+    text-align: center;
+    color: $colorWhite !important;
+    margin-bottom: 80px !important;
+  }
+
+  .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    counter-reset: item;
+
+    &Item {
+      width: calc(50% - 15px);
+      margin-bottom: 80px;
+      color: $colorSystemGhost;
+      padding-left: 70px;
+      
+      &:before {
+        counter-increment: item;
+        content: counter(item);
+        width: 55px;
+        height: 55px;
+        display: block;
+        text-align: center;
+        line-height: 55px;
+        border-radius: 50%;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $colorWhite ;
+        background-color: $colorSystemBlazeOrange;
+        position: absolute;
+        top:  - 14.5px;
+        left: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 45px;
+        height: 45px;
+        display: block;
+        text-align: center;
+        border-radius: 50%;
+        border: solid 2px $colorWhite;
+        position: absolute;
+        top:  -10px;
+        left: 5px;
+      }
+
+      &Title {
+        color: $colorSystemBlueHaze !important;
+      }
+    }
+  }
+
+
+  @media(max-width: 960px) {
+    .list {
+      flex-direction: column;
+
+      &Item {
+        width: 100%;
+      }
+    }
+  }
+}

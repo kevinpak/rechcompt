@@ -1,0 +1,24 @@
+@import './../commons';
+
+.btn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $colorSystemBlazeOrange;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  margin-left: 645px;
+  border-radius: 50%;
+  z-index: 500;
+
+  .icon {
+    background-color: $colorWhite !important;
+  }
+
+  @media(max-width: 1440px) {
+    left: initial;
+    margin-left: 0;
+    right: 8px;
+  }
+}

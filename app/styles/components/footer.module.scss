@@ -1,0 +1,123 @@
+@import './../commons';
+
+.footer {
+  background-color: $colorSystemGondola;
+  padding: 35px 0 15px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+    .webmaster {
+      font-size: 0.8rem;
+      color: $colorSystemBlueHaze;
+
+      &Link{
+        font-size: 0.9rem;
+        font-family: $FirstFontBold;
+        color: $colorSystemConcrete;
+        transition: all .5s linear;
+
+        &:hover {
+          color: $colorSystemCrusta !important;
+        }
+      }
+    }
+
+    .rsList {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &Item {
+        margin: 2.5px;
+
+        &Link {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          //border: solid 1px $colorSystemSilverChalice;
+          //background-color: $colorSystemSilverChalice;
+          //-webkit-mask-size: 20px 20px;
+        }
+      }
+    }
+
+    .user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .list {
+        &Item {
+          margin-right: 16px;
+  
+          
+          &Link {
+            font-size: 0.9rem;
+            color: $colorWhite;
+            transition: all .5s linear;
+
+            &.register {
+              color: $colorSystemBlazeOrange;
+            }
+
+            &:hover {
+              color: $colorSystemCrusta !important;
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 16px;
+            width: 2px;
+            background-color: $colorWhite;
+            right: -9px;
+            top: calc(50% - 8px);
+          }
+
+          &:last-child {
+            margin-right: 0;
+
+            &::after {
+              display: none;
+            }
+          }
+  
+        }
+      }
+    }
+  }
+
+  .bottom {
+    text-align: center;
+    color: $colorSystemGray;
+    border-top: solid 1px $colorSystemWoodyBrown;
+    padding-top: 5px;
+    font-size: 0.8rem;
+  }
+
+  @media(max-width: 540px) {
+    .top {
+      flex-direction: column;
+
+      .webmaster {
+        order: 3;
+      }
+
+      .rsList {
+        order: 2;
+      }
+
+      .user {
+        order: 1;
+      }
+    }
+  }
+}
